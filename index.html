@@ -12,28 +12,43 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <section id="controls">
+        <input type="text" id="search-bar" placeholder="Search news...">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="politics">Politics</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+        </select>
+    </section>
+
     <main>
         <section id="news-container">
-            <article class="news-item">
-                <h2 class="headline">Headline 1</h2>
-                <p class="summary">This is a brief summary of the news article...</p>
+            <article class="news-item" data-category="politics">
+                <h2 class="headline">Politics Headline 1</h2>
+                <p class="summary">This is a brief summary of the politics news article...</p>
                 <button class="read-more">Read More</button>
             </article>
 
-            <article class="news-item">
-                <h2 class="headline">Headline 2</h2>
-                <p class="summary">This is a brief summary of the news article...</p>
+            <article class="news-item" data-category="sports">
+                <h2 class="headline">Sports Headline 1</h2>
+                <p class="summary">This is a brief summary of the sports news article...</p>
                 <button class="read-more">Read More</button>
             </article>
 
-            <!-- More articles here -->
+            <article class="news-item" data-category="technology">
+                <h2 class="headline">Technology Headline 1</h2>
+                <p class="summary">This is a brief summary of the technology news article...</p>
+                <button class="read-more">Read More</button>
+            </article>
+
+            <!-- More news articles here -->
         </section>
     </main>
 
@@ -44,3 +59,4 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
