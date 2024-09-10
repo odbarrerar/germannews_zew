@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>News Panel</title>
+    <title>The Latest German News!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Li and Oscar News</h1>
+        <div id="logo">
+            <img src="german-flag.png" alt="German Flag">
+            <h1>The Latest German News!</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Economy</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Sports</a></li>
             </ul>
         </nav>
     </header>
@@ -23,28 +28,32 @@
         <select id="category-filter">
             <option value="all">All Categories</option>
             <option value="politics">Politics</option>
+            <option value="economy">Economy</option>
+            <option value="culture">Culture</option>
             <option value="sports">Sports</option>
-            <option value="technology">Technology</option>
         </select>
     </section>
 
     <main>
         <section id="news-container">
             <article class="news-item" data-category="politics">
-                <h2 class="headline">Politics Headline 1</h2>
+                <img src="news1.jpg" alt="News Image">
+                <h2 class="headline">German Politics Headline 1</h2>
                 <p class="summary">This is a brief summary of the politics news article...</p>
                 <button class="read-more">Read More</button>
             </article>
 
-            <article class="news-item" data-category="sports">
-                <h2 class="headline">Sports Headline 1</h2>
-                <p class="summary">This is a brief summary of the sports news article...</p>
+            <article class="news-item" data-category="economy">
+                <img src="news2.jpg" alt="News Image">
+                <h2 class="headline">German Economy Headline 1</h2>
+                <p class="summary">This is a brief summary of the economy news article...</p>
                 <button class="read-more">Read More</button>
             </article>
 
-            <article class="news-item" data-category="technology">
-                <h2 class="headline">Technology Headline 1</h2>
-                <p class="summary">This is a brief summary of the technology news article...</p>
+            <article class="news-item" data-category="culture">
+                <img src="news3.jpg" alt="News Image">
+                <h2 class="headline">German Culture Headline 1</h2>
+                <p class="summary">This is a brief summary of the culture news article...</p>
                 <button class="read-more">Read More</button>
             </article>
 
@@ -53,7 +62,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 News Panel</p>
+        <p>&copy; 2024 The Latest German News!</p>
     </footer>
 
     <script src="scripts.js"></script>
